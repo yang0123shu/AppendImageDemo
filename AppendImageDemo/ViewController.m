@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "MXImagesShowViewController.h"
 @interface ViewController ()
 
 @end
@@ -23,6 +23,10 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)toSecondVC:(id)sender {
+    
+    [self.navigationController pushViewController:[[MXImagesShowViewController alloc]init] animated:YES];
 }
 
 
